@@ -1,0 +1,29 @@
+.container--footer {
+  padding-top: 40px;
+  padding-bottom: 40px;
+  height: 240px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  @media (min-width: 767px) {
+    height: fit-content;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+.np-logo {
+  width: 263px;
+}
+
+.copyright {
+  font-size: 12px;
+  text-align: center;
+  span {
+    text-transform: uppercase;
+  }
+  @media (max-width: 766px) {
+    order: 3;
+  }
+}

@@ -1,34 +1,20 @@
 @font-face {
-  font-family: tuitype-light;
-  src: url("https://cloud.tui.com/ui/ui-assets/v1/fonts/tuitypelight-regular.woff2")
-      format("woff2"),
-    url("https://cloud.tui.com/ui/ui-assets/v1/fonts/tuitypelight-regular.woff")
-      format("woff");
-  font-weight: 400;
-  font-style: normal;
-  font-display: fallback;
+  font-family: "Gothampro";
+  src: url("fonts/gothampro.eot");
+  src: url("fonts/gothampro.eot") format("embedded-opentype"),
+    url("fonts/gothampro.woff2") format("woff2"),
+    url("fonts/gothampro.woff") format("woff"),
+    url("fonts/gothampro.ttf") format("truetype"),
+    url("fonts/gothampro.svg#gothampro") format("svg");
 }
-
 @font-face {
-  font-family: tuitype-light;
-  src: url("https://cloud.tui.com/ui/ui-assets/v1/fonts/tuitypelight-bold.woff2")
-      format("woff2"),
-    url("https://cloud.tui.com/ui/ui-assets/v1/fonts/tuitypelight-bold.woff")
-      format("woff");
-  font-weight: 700;
-  font-style: normal;
-  font-display: fallback;
-}
-
-@font-face {
-  font-family: tuitype-light;
-  src: url("https://cloud.tui.com/ui/ui-assets/v1/fonts/tuitypelight-italic.woff2")
-      format("woff2"),
-    url("https://cloud.tui.com/ui/ui-assets/v1/fonts/tuitypelight-italic.woff")
-      format("woff");
-  font-weight: 400;
-  font-style: italic;
-  font-display: fallback;
+  font-family: "Gothampro-black";
+  src: url("fonts/gothampro_black.eot");
+  src: url("fonts/gothampro_black.eot") format("embedded-opentype"),
+    url("fonts/gothampro_black.woff2") format("woff2"),
+    url("fonts/gothampro_black.woff") format("woff"),
+    url("fonts/gothampro_black.ttf") format("truetype"),
+    url("fonts/gothampro_black.svg#gothampro_black") format("svg");
 }
 
 html {
@@ -41,20 +27,21 @@ html {
 :after,
 :before {
   box-sizing: inherit;
-  /* outline: solid 1px tomato; */
+  // outline: solid 1px tomato;
 }
 body {
   margin: 0;
-  font-family: tuitype-light, Helvetica, sans-serif;
+  font-family: Gothampro, Helvetica, sans-serif;
   letter-spacing: 0px;
   font-size: 18px;
   line-height: 1.55;
   color: $text-color;
   font-weight: 400;
   min-width: 320px;
-  @media (max-width: 767px) {
-    margin-top: 47px;
-    margin-bottom: 48px;
+  font-size: 14px;
+
+  @media (min-width: 767px) {
+    font-size: 20px;
   }
 }
 
@@ -124,4 +111,26 @@ main {
 }
 .pb-20 {
   padding-bottom: 20px !important;
+}
+
+.social-list {
+  display: flex;
+}
+.social-list--items {
+  &:not(:last-of-type) {
+    margin-right: 40px;
+  }
+  a {
+    display: block;
+    width: 32px;
+    height: 32px;
+    display: flex;
+    align-items: center;
+    color: #191c21;
+    transition: color $timing;
+    &:hover,
+    &:focus {
+      color: $accent-color;
+    }
+  }
 }

@@ -1,0 +1,720 @@
+<!DOCTYPE html>
+<html lang="uk">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/svg+xml" href="img/favicon.svg" />
+    <link rel="icon" type="image/png" href="img/favicon.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Marck+Script&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.min.css" />
+    <title>Новий Захід Українська мрія</title>
+  </head>
+
+  <body>
+    <header class="header">
+      <nav class="navigation">
+        <a href="http://www.new-west.in.ua/"
+          ><img
+            src="./img/logo.svg"
+            alt="logo"
+            width="178"
+            height="43"
+            class="logo"
+        /></a>
+        <ul class="navigation__list list">
+          <li class="navigation__item">
+            <a href="#main" class="navigation__link link active">Головна</a>
+          </li>
+          <li class="navigation__item">
+            <a href="#content" class="navigation__link link">Зміст</a>
+          </li>
+          <li class="navigation__item">
+            <a href="#about-author" class="navigation__link link">Про автора</a>
+          </li>
+          <li class="navigation__item">
+            <a href="#review" class="navigation__link link">Відгуки</a>
+          </li>
+          <li class="navigation__item">
+            <a href="#how-to-buy" class="navigation__link link">Де купити?</a>
+          </li>
+        </ul>
+        <button
+          class="hamburger hamburger__stand"
+          type="button"
+          aria-label="menu-button"
+          data-menu-button
+        >
+          <span class="hamburger__box">
+            <span class="hamburger__inner"></span>
+          </span>
+        </button>
+      </nav>
+
+      <div class="mobile-menu" data-menu>
+        <nav class="navigation__mobile-menu">
+          <ul class="list">
+            <li class="navigation__item--mobile">
+              <a href="#main" class="navigation__link link">Головна</a>
+            </li>
+            <li class="navigation__item--mobile">
+              <a href="#content" class="navigation__link link">Зміст</a>
+            </li>
+            <li class="navigation__item--mobile">
+              <a href="#about-author" class="navigation__link link"
+                >Про автора</a
+              >
+            </li>
+            <li class="navigation__item--mobile">
+              <a href="#review" class="navigation__link link">Відгуки</a>
+            </li>
+            <li class="navigation__item--mobile">
+              <a href="#how-to-buy" class="navigation__link link">Де купити?</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <main>
+      <section class="hero-section" id="main">
+        <div class="container container--hero">
+          <div class="inner__hero__container">
+            <hgroup>
+              <h1 class="main-headding">
+                <span>Головна книга року</span> <br />
+                Новий Захід <br />
+                Українська мрія
+              </h1>
+              <p>Економічні реформи від Ярослава&nbsp;Романчука</p>
+            </hgroup>
+            <p class="hero--sponsor">
+              За підтримки засновників компанії "Нова пошта" Вячеслава Климова
+              та Володимира Поперешнюка
+            </p>
+          </div>
+
+          <div class="book-wrapper">
+            <picture>
+              <source
+                type="image/avif"
+                srcset="./img/hero-book.avif 1x, ./img/hero-book@2x.avif 2x"
+              />
+              <source
+                type="image/webp"
+                srcset="./img/hero-book.webp 1x, ./img/hero-book@2x.webp 2x"
+              />
+              <img
+                src="./img/hero-book@2x.jpg"
+                alt="книга Новий Захід Українська мрія"
+                width="441"
+                height="680"
+                class="book-image"
+                loading="lazy"
+              />
+            </picture>
+          </div>
+        </div>
+        <div class="textdecor--hero"></div>
+      </section>
+      <section class="section">
+        <div class="container">
+          <p class="annotation">
+            «Новий Захід. Українська мрія» - перша книга у новітній історії
+            України, яка представляє системний погляд на економічні реформи в
+            країні. У ній представлено наукове обґрунтування необхідності
+            стратегічного курсу, який дозволить створити тисячі нових бізнесів і
+            мільйони робочих місць із зростанням ВВП до 7-10% на рік. Що
+            гарантовано забезпечить швидке повоєнне відновлення економіки
+            країни.
+          </p>
+          <div class="video">
+            <div class="thumb-wrap">
+              <iframe
+                width="640"
+                height="360"
+                src="https://www.youtube.com/embed/b0AJIJjnTpU?rel='0'"
+                title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen
+              ></iframe>
+            </div>
+          </div>
+          <div class="about-content">
+            <h3 class="about-subtitle">Загальні положення</h3>
+            <p>
+              Книга містить докладний план, як перетворити Україну на
+              процвітаючу та успішну країну, а звичайних українців зробити
+              багатими та щасливими. <br />
+              Системні пропозиції щодо трансформації економіки України базуються
+              на аналізі основних моделей економічного зростання та практиках
+              реалізації реформ у країнах, що розвиваються. Продемонстровано
+              результати таких реформ, успіхи та невдачі. Вперше з початку
+              1990-х років було проведено ретельний аудит економічної політики
+              України з визначенням можливостей та напрямів економічного
+              зростання.
+            </p>
+          </div>
+          <div class="about-content">
+            <h3 class="about-subtitle">
+              Аналіз та дослідження економічних моделей
+            </h3>
+            <p>
+              Книга містить докладний план, як перетворити Україну на
+              процвітаючу та успішну країну, а звичайних українців зробити
+              багатими та щасливими. Системні пропозиції щодо трансформації
+              економіки України базуються на аналізі основних моделей
+              економічного зростання та практиках реалізації реформ у країнах,
+              що розвиваються. Продемонстровано результати таких реформ, успіхи
+              та невдачі. Вперше з початку 1990-х років було проведено ретельний
+              аудит економічної політики України з визначенням можливостей та
+              напрямів економічного зростання.
+            </p>
+          </div>
+          <div class="about-content">
+            <h3 class="about-subtitle">Автор пропонує</h3>
+            <p>
+              Ярослав Романчук пропонує створити «Новий Захід» в Україні за
+              допомогою інноваційної моделі економічного розвитку, що
+              ґрунтується на теорії підприємницького зростання Австрійської
+              економічної школи (АЕШ) та ідеях свободи. Його висновки
+              ґрунтуються на численних наукових дослідженнях та емпіричних
+              даних, які були накопичені за більш ніж 30 років за такими
+              явищами, як «економічна свобода», «приватна власність»,
+              «конкурентоспроможність» та «соціальний прогрес».
+            </p>
+          </div>
+
+          <div class="about-content">
+            <h3 class="about-subtitle">
+              Як можна практично релізувати пропозиції
+            </h3>
+            <p>
+              Практична реалізація запропонованої стратегії дозволить провести
+              економічні реформи в Україні, зробивши її привабливою країною для
+              життя та інвестування. Це забезпечить Україні входження до
+              престижного клубу країн з ВВП понад трильйон доларів та
+              перетворить її на потужний локомотив розвитку та зростання Європи.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="content">
+        <div class="container">
+          <h2 class="section-title">
+            Розділи книги “Новий Захід. Українська мрія
+          </h2>
+          <ol class="list">
+            <li>
+              <div class="accordion active">
+                <p class="accordion-subtile">Розділ I</p>
+                <h3 class="accrodion-title">
+                  Моделі економічного зростання та результати їх застосування
+                </h3>
+              </div>
+              <div class="panel" style="max-height: fit-content;">
+                <p>
+                  Основні теорії економічного зростання, розроблені вченими у XX
+                  столітті, представлені у першому розділі. Перша модель –
+                  марксистська або радянська, описана самим Марксом та його
+                  послідовниками. Друга модель – теорії економічного зростання
+                  Харрода-Домара і Солоу-Свона, при яких бідні країни повинні
+                  швидко наздоганяти багаті. Третя модель – теорія економічного
+                  зростання Ромера, яка передбачає активне втручання держави у
+                  створення нових ідей та технологій. Четверта модель – теорія
+                  підприємницького зростання Мізеса-Шумпетера, де основним
+                  елементом є економічна свобода, куди входять реалізація
+                  принципу верховенства права та відкритої конкуренції.
+                </p>
+              </div>
+            </li>
+            <li class="list">
+              <div class="accordion">
+                <p>Розділ II</p>
+                <h3 class="accrodion-title">
+                  Джерела проблем в економіці країн пострадянського простору
+                </h3>
+              </div>
+              <div class="panel">
+                <p>
+                  Практика застосування різних теорій економічного зростання у
+                  пострадянських країнах докладно проаналізована у другому
+                  розділі. Перехідні країни, які обрали підприємницьку модель
+                  економічного зростання, досягли найкращих успіхів. Проте
+                  більшість країн, серед яких і Україна, обрали тип держави
+                  загального інтервенціонізму, яка ґрунтується на марксизмі та
+                  кейнсіанстві. Автор докладно описує суть цієї моделі, її
+                  особливості, дефекти та помилки пострадянської трансформації.
+                  Саме це визначило створення в Україні моделі
+                  «Олігархат/Схематоз».
+                </p>
+              </div>
+            </li>
+
+            <li class="list">
+              <div class="accordion">
+                <p>Розділ III</p>
+                <h3 class="accrodion-title">
+                  Підприємець/Споживач проти системи Олігархат/Схематоз
+                </h3>
+              </div>
+              <div class="panel">
+                <p>
+                  Інноваційні підходи до економічної політики розвитку та
+                  зростання з урахуванням стану економіки України в умовах
+                  російсько-української війни пропонує автор у третьому розділі.
+                  Також проведено детальний аналіз представлених українському
+                  суспільству у 2022–2023 роках пропозицій післявоєнної
+                  трансформації з боку уряду України (т. зв. плану «Лугано») та
+                  низки міжнародних організацій. Автор показав, що ці пропозиції
+                  лише відтворюють ті провальні методи, які вже впроваджувалися
+                  в десятках країн світу, що розвиваються, і отримали негативні
+                  результати.
+                </p>
+              </div>
+            </li>
+
+            <li class="list">
+              <div class="accordion">
+                <p>Розділ IV</p>
+                <h3 class="accrodion-title">
+                  Програма економічного розвитку та зростання України «Новий
+                  Захід»
+                </h3>
+              </div>
+              <div class="panel">
+                <p>
+                  У цій частині представлено системну програму економічних
+                  реформ, яка дозволить Україні:
+                </p>
+                <ul>
+                  <li>
+                    забезпечити швидке та довгострокове економічне зростання,
+                  </li>
+                  <li>
+                    вийти з демографічної кризи та повернути українських
+                    мігрантів на батьківщину,
+                  </li>
+                  <li>
+                    створити один із найкращих інвестиційних та ділових кліматів
+                    у світі,
+                  </li>
+                  <li>
+                    забезпечити фінансову та бюджетну стійкість після перемоги у
+                    війні,
+                  </li>
+                  <li>
+                    створити потужну матеріальну базу для забезпечення
+                    обороноздатності України;
+                  </li>
+                  <li>швидко інтегруватися у глобальні виробничі ланцюжки,</li>
+                  <li>
+                    стати повноцінним партнером у світовій архітектурі
+                    кооперації та безпеки.
+                  </li>
+                </ul>
+              </div>
+            </li>
+          </ol>
+        </div>
+      </section>
+
+      <section class="section section--author" id="about-author">
+        <div class="author-text-decor"></div>
+
+        <div class="container container-author">
+          <h2 class="section-title">
+            Ярослав Романчук:<br />
+            про автора книги
+          </h2>
+          <article class="col-2">
+            <div class="image-wrapper">
+              <picture>
+                <source
+                  type="image/avif"
+                  srcset="
+                    ./img/yaroslav-romanchuk_.avif    1x,
+                    ./img/yaroslav-romanchuk_@2x.avif 2x
+                  "
+                />
+                <source
+                  type="image/webp"
+                  srcset="
+                    ./img/yaroslav-romanchuk_.webp    1x,
+                    ./img/yaroslav-romanchuk_@2x.webp 2x
+                  "
+                />
+                <img
+                  src="./img/yaroslav-romanchuk.jpg"
+                  alt="Ярослав Романчук"
+                  width="478"
+                  height="736"
+                  class="author-image"
+                  loading="lazy"
+                  decoding="async"
+                />
+              </picture>
+            </div>
+            <div class="text-wrapper">
+              <h3 class="author--title">Ярослав Романчук</h3>
+              <p class="author-subtitle">ЕКОНОМІСТ</p>
+              <p class="biography">
+                Романчук Ярослав Чеславович - відомий економіст, керівник
+                економічних реформ Офісу простих рішень і результатів, президент
+                Науково-дослідницького центру Мізеса. Консультант з економіки
+                бізнесу, влади та НДО в Україні. Спеціалізується на реформах
+                економіки на постсоціалістичному просторі. Лауреат премій Atlas
+                Economic Research Foundation: Sir Anthony Fisher Award 2006,
+                2009 р.р. за книжки про феномен економічного дива та системних
+                ринкових реформ для перехідних країн. Лауреат нагороди
+                «Найкращий адвокат свободи в Україні в 2021 році» від Ayn Rand
+                Center in Ukraine. Автор 12 книг з економіки, транзиту від
+                Держплану до вільного ринку.
+              </p>
+              <ul class="list social-list social-list--author">
+                <li class="social-list--items">
+                  <a
+                    href="http://"
+                    class="link"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <svg class="icon" width="32" height="32">
+                      <use href="./img/icons.svg#icon-wiki"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="social-list--items">
+                  <a
+                    href="http://"
+                    class="link"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <svg class="icon" width="32" height="32">
+                      <use href="./img/icons.svg#icon-fb"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="social-list--items">
+                  <a
+                    href="http://"
+                    class="link"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <svg class="icon" width="32" height="32">
+                      <use href="./img/icons.svg#icon-youtube"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="social-list--items">
+                  <a
+                    href="https://telegram.me/groupname"
+                    class="link"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <svg class="icon" width="32" height="32">
+                      <use href="./img/icons.svg#icon-telegram"></use>
+                    </svg>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="section" id="review">
+        <div class="container">
+          <h2 class="section-title">
+            Відгуки<br />
+            експертів про книгу<br />
+            Я. Романчука
+          </h2>
+          <ul class="list reviews">
+            <li class="review-item">
+              <div class="reviewers-photo">
+                <div class="photo-thumb">
+                  <picture>
+                    <source
+                      type="image/avif"
+                      srcset="./img/klimov_mobile.avif"
+                      media="max-width: 600px"
+                    />
+                    <source
+                      type="image/avif"
+                      srcset="./img/klimov.avif 1x, ./img/klimov@2x.avif 2x"
+                    />
+                    <source
+                      type="image/webp"
+                      srcset="./img/klimov.webp 1x, ./img/klimov@2x.webp 2x"
+                    />
+                    <img
+                      src="./img/klimov@.jpg"
+                      alt="Вячеслав Климов"
+                      width="170"
+                      height="210"
+                      class="author-image"
+                      loading="lazy"
+                      decoding="async"
+                    />
+                  </picture>
+                </div>
+                <div class="photo-thumb">
+                  <picture>
+                    <source
+                      type="image/avif"
+                      srcset="
+                        ./img/popereshniyk.avif    1x,
+                        ./img/popereshniyk@2x.avif 2x
+                      "
+                    />
+                    <source
+                      type="image/webp"
+                      srcset="
+                        ./img/popereshniyk.webp    1x,
+                        ./img/popereshniyk@2x.webp 2x
+                      "
+                    />
+                    <img
+                      src="./img/popereshniyk@.jpg"
+                      alt="Володимир Поперешнюк"
+                      width="170"
+                      height="210"
+                      class="author-image"
+                      loading="lazy"
+                      decoding="async"
+                    />
+                  </picture>
+                </div>
+              </div>
+              <p class="review-text">
+                “Якби така книга з'явилася в Україні на початку 1990&#8209;х, то
+                доля країни могла б бути зовсім іншою. Без олігархату та
+                корупції, з населенням понад 50 мільйонів та рівнем життя, як у
+                Чехії чи Польщі. Перед нами черговий шанс.”
+              </p>
+              <h3 class="reviewer-title">
+                Вячеслав Климов, <br />Володимир Поперешнюк,
+              </h3>
+              <p class="reviewe-subtitle">Засновники компанії «Нова Пошта»</p>
+            </li>
+            <li class="review-item">
+              <div class="reviewers-photo">
+                <div class="photo-thumb">
+                  <picture>
+                    <source
+                      type="image/avif"
+                      srcset="./img/podolyak.avif 1x, ./img/podolyak@2x.avif 2x"
+                    />
+                    <source
+                      type="image/webp"
+                      srcset="./img/podolyak.webp 1x, ./img/podolyak@2x.webp 2x"
+                    />
+                    <img
+                      src="./img/podolyak@.jpg"
+                      alt="Михайло Подоляк"
+                      width="170"
+                      height="210"
+                      class="author-image"
+                      loading="lazy"
+                      decoding="async"
+                    />
+                  </picture>
+                </div>
+              </div>
+              <p class="review-text">
+                “Мені здається, Ярославу вдалося написати не просто книгу, а
+                покрокову інструкцію про те, як створити саме таку Україну. В
+                яку закохуються, в яку вірять, в яку готові інвестувати.”
+              </p>
+              <h3 class="reviewer-title">
+                Михайло Подоляк
+              </h3>
+              <p class="reviewe-subtitle">
+                Радник голови Офісу Президента України
+              </p>
+            </li>
+            <li class="review-item">
+              <div class="reviewers-photo">
+                <div class="photo-thumb">
+                  <picture>
+                    <source
+                      type="image/avif"
+                      srcset="./img/nowacki.avif 1x, ./img/nowacki@2x.avif 2x"
+                    />
+                    <source
+                      type="image/webp"
+                      srcset="./img/nowacki.webp 1x, ./img/nowacki@2x.webp 2x"
+                    />
+                    <img
+                      src="./img/nowacki@.jpg"
+                      alt="Мартін Новацкі"
+                      width="170"
+                      height="210"
+                      class="author-image"
+                      loading="lazy"
+                      decoding="async"
+                    />
+                  </picture>
+                </div>
+              </div>
+              <p class="review-text">
+                “Україна бюрократична залишиться в минулому. Україна
+                підприємницька - це майбутнє. Українці на нього заслужили,
+                заплатили за цю можливість дуже високу ціну.”
+              </p>
+              <h3 class="reviewer-title">
+                Мартін Новацкі
+              </h3>
+              <p class="reviewe-subtitle">
+                Wiceprezes Związek Przedsiębiorców i Pracodawców
+              </p>
+            </li>
+            <li class="review-item">
+              <div class="reviewers-photo">
+                <div class="photo-thumb">
+                  <picture>
+                    <source
+                      type="image/avif"
+                      srcset="
+                        ./img/kamchatnyi.avif    1x,
+                        ./img/kamchatnyi@2x.avif 2x
+                      "
+                    />
+                    <source
+                      type="image/webp"
+                      srcset="
+                        ./img/kamchatnyi.webp    1x,
+                        ./img/kamchatnyi@2x.webp 2x
+                      "
+                    />
+                    <img
+                      src="./img/kamchatnyi@.jpg"
+                      alt="Михайло Камчатний"
+                      width="170"
+                      height="210"
+                      class="author-image"
+                      loading="lazy"
+                      decoding="async"
+                    />
+                  </picture>
+                </div>
+              </div>
+              <p class="review-text">
+                “Книга, яка дає вичерпне розуміння необхідних економічних змін в
+                нашій країні. Тепер точно на наш вибір не вплине брехня
+                популістів і політичних шахраїв, які водять нас за ніс всі роки
+                незалежності.”
+              </p>
+              <h3 class="reviewer-title">
+                Михайло Камчатний
+              </h3>
+              <p class="reviewe-subtitle">
+                Комітет виборців України
+              </p>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <div class="container">
+        <hr />
+      </div>
+
+      <section class="section section--how-to-buy" id="how-to-buy">
+        <!-- <div class="how-to-bye-text-decor"></div> -->
+        <div class="container container--how-to-bye">
+          <h2 class="section-title">
+            Де можна <br> КУПИТИ книгу <br> “Новий Захід. <br> Українська мрія” ?
+          </h2>
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Temporibus
+          maxime nemo omnis exercitationem eum voluptatibus velit ut aperiam
+          distinctio nam repudiandae assumenda consequatur doloribus ipsum
+          laboriosam et mollitia, debitis aliquam.
+        </div>
+      </section>
+      <footer class="footer">
+        <div class="container container--footer">
+          <a href="http://" target="_blank" rel="noopener noreferrer"
+            ><img
+              src="./img/nova-poshta-logo.svg"
+              class="np-logo"
+              alt="Нова пошта"
+              width="283"
+            />
+          </a>
+          <p class="copyright">
+            © 2023, Я.Романчук <br> <span>“Новий Захід. Українська мрія”</span> <br> Всі права захищені
+          </p>
+          <ul class="list social-list social-list--footer">
+                <li class="social-list--items">
+                  <a
+                    href="http://"
+                    class="link"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <svg class="icon" width="32" height="32">
+                      <use href="./img/icons.svg#icon-wiki"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="social-list--items">
+                  <a
+                    href="http://"
+                    class="link"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <svg class="icon" width="32" height="32">
+                      <use href="./img/icons.svg#icon-fb"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="social-list--items">
+                  <a
+                    href="http://"
+                    class="link"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <svg class="icon" width="32" height="32">
+                      <use href="./img/icons.svg#icon-youtube"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="social-list--items">
+                  <a
+                    href="https://telegram.me/groupname"
+                    class="link"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <svg class="icon" width="32" height="32">
+                      <use href="./img/icons.svg#icon-telegram"></use>
+                    </svg>
+                  </a>
+                </li>
+        </div>
+      </footer>
+    </main>
+    <a href="#" class="scrollup" aria-label="up button">
+      <img
+        class="scrollup-icon"
+        src="./img/cheveron-outline-up.svg"
+        alt="up button"
+        width="45"
+        height="45"
+      />
+    </a>
+    <script src="./js/index.js" type="module"></script>
+  </body>
+</html>

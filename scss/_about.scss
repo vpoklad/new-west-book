@@ -1,0 +1,63 @@
+.annotation {
+  text-indent: 20px;
+  font-family: "Gotham Pro";
+  font-style: normal;
+  font-weight: 700;
+  line-height: 1.3;
+  margin-bottom: 50px;
+  font-size: 14px;
+  @media (min-width: 767px) {
+    margin-bottom: 100px;
+    font-size: 28px;
+  }
+}
+.video {
+  max-width: 800px;
+  margin: 0 auto;
+  margin-bottom: 50px;
+  @media (min-width: 767px) {
+    margin-bottom: 100px;
+  }
+}
+
+.thumb-wrap {
+  position: relative;
+  padding-bottom: 56.25%; /* задаёт высоту контейнера для 16:9 (если 4:3 — поставьте 75%) */
+  height: 0;
+  overflow: hidden;
+}
+.thumb-wrap iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-width: 0;
+  outline-width: 0;
+}
+
+.about-content {
+  @media (min-width: 767px) {
+    display: flex;
+    justify-content: space-between;
+  }
+  &:not(:last-of-type) {
+    margin-bottom: 25px;
+    @media (min-width: 767px) {
+      margin-bottom: 80px;
+    }
+  }
+  p {
+    flex-basis: 670px;
+  }
+}
+
+.about-subtitle {
+  font-family: "Gothampro-black", Impact, Haettenschweiler, "Arial Narrow Bold",
+    sans-serif;
+  line-height: 1.1;
+  @media (min-width: 767px) {
+    font-size: 35px;
+    flex-basis: 370px;
+  }
+}

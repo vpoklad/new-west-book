@@ -1,0 +1,46 @@
+.reviews {
+  @media (min-width: 767px) {
+    padding-left: 45px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 60px 60px;
+  }
+}
+.review-item:not(:last-of-type) {
+  @media (max-width: 766px) {
+    margin-bottom: 60px;
+  }
+}
+
+.reviewers-photo {
+  display: flex;
+
+  gap: 15px;
+  margin-bottom: 40px;
+}
+
+.photo-thumb {
+  width: 170px;
+  height: 210px;
+  overflow: hidden;
+  border-radius: 5px;
+}
+.author-image {
+  object-fit: cover;
+}
+
+.review-text {
+  margin-bottom: 40px;
+  font-style: italic;
+}
+
+.reviewer-title {
+  font-family: "Gothampro-black", Impact, Haettenschweiler, "Arial Narrow Bold",
+    sans-serif;
+  font-size: 24px;
+  margin-bottom: 15px;
+}
+.reviewe-subtitle {
+  font-size: 16px;
+}

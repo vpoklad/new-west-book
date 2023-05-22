@@ -1,13 +1,15 @@
-/* @import "./scss/modern_normalize"; */
+@import "./scss/modern_normalize";
 @import "./scss/variables";
-
+@import "./scss/hero";
+@import "./scss/about";
 @import "./scss/common";
 @import "./scss/container";
-
-@import "./scss/hero";
-@import "./scss/table";
+@import "./scss/section";
 @import "./scss/navigation";
-@import "./scss/mobile-menu";
-@import "./scss/embed";
+@import "./scss/accordion";
+@import "./scss/author";
+@import "./scss/reviews";
+@import "./scss/how-to-buy";
 @import "./scss/footer";
+@import "./scss/mobile-menu";
 @import "./scss/scroll-up";

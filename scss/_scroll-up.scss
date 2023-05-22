@@ -7,7 +7,7 @@
   background-color: transparent;
   width: 45px;
   height: 45px;
-  bottom: 140px;
+  bottom: 75px;
   right: 20px;
   z-index: 1500;
   opacity: 0;
@@ -21,7 +21,7 @@
   }
 }
 .showBtn {
-  opacity: 1;
+  opacity: 0.5;
   transform: translateY(0);
   pointer-events: initial;
   box-shadow: 4px 3px 5px 0px rgba(0, 0, 0, 0.26);

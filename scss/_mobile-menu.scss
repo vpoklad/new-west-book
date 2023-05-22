@@ -16,34 +16,21 @@
   padding-top: 80px;
 
   @media screen and (min-width: 768px) {
-    height: 40%;
+    height: 60dvh;
   }
 
-  @media screen and (max-width: 767px) {
+  @media screen and (max-width: 799px) {
     display: block;
   }
 }
 
-.mobile-menu__bar {
-  @media (min-width: 768px) {
-    display: none;
-  }
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  z-index: 2050;
-  background-color: $background-color;
-}
 .container--mobile-bar {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
 }
-.logo-img--transparent {
-  width: 71px;
-}
+
 .mobile-menu.is-open {
   transform: translateY(0);
 }
@@ -53,21 +40,19 @@
   ul {
     margin-bottom: 64px;
   }
-}
+  .navigation__mobile-menu list {
+    &:not(:last-child) {
+      margin-bottom: 45px;
+    }
+  }
 
-.navigation__item {
-  &:not(:last-child) {
-    margin-bottom: 45px;
+  .navigation__link {
+    padding: 20px;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
   }
 }
-
-.navigation__link {
-  padding: 20px;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 24px;
-}
-
 .hamburger {
   padding: 10px 10px;
   display: block;
@@ -83,12 +68,7 @@
   margin: 0;
   overflow: visible;
 
-  @media screen and (min-width: 768px) {
-    top: 11px;
-    right: 52px;
-  }
-
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: 800px) {
     display: none;
   }
 }
@@ -101,7 +81,7 @@
 .hamburger.is-open .hamburger__inner,
 .hamburger.is-open .hamburger__inner::before,
 .hamburger.is-open .hamburger__inner::after {
-  background-color: $text-color;
+  background-color: $accent-color;
 }
 
 .hamburger__box {
@@ -121,7 +101,7 @@
 .hamburger__inner::after {
   width: 30px;
   height: 2px;
-  background-color: $text-color;
+  background-color: $accent-color;
 
   border-radius: 2px;
   position: absolute;

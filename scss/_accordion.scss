@@ -1,0 +1,79 @@
+.accordion {
+  cursor: pointer;
+  width: 100%;
+  transition: 0.4s;
+  position: relative;
+  padding-right: 72px;
+  border-style: solid;
+  border-width: 1px;
+  border-color: #191c21;
+  border-left: none;
+  border-right: none;
+  border-bottom: none;
+  min-height: 80px;
+
+  @media (min-width: 767px) {
+    min-height: 143px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &:after {
+    background-color: #191c21;
+    display: block;
+    width: 1px;
+    height: 32px;
+
+    position: absolute;
+    top: 50%;
+    right: 30px;
+    transform: translateY(-50%);
+    content: "";
+  }
+
+  &:before {
+    height: 1px;
+    width: 32px;
+    background-color: #191c21;
+    display: block;
+
+    position: absolute;
+    top: 50%;
+    right: 15px;
+    transform: translateY(-50%);
+    content: "";
+    transition: transform 0.2s ease-out;
+  }
+  &.active::after {
+    transform: scaleY(0);
+  }
+}
+
+.accordion.active,
+.accordion:hover {
+  background-color: #ffffff;
+}
+
+.panel {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+  p:last-of-type {
+    padding-bottom: 35px;
+  }
+}
+
+.accrodion-title {
+  font-family: "Gothampro-black", Impact, Haettenschweiler, "Arial Narrow Bold",
+    sans-serif;
+  line-height: 1;
+  font-size: 18px;
+  @media (min-width: 767px) {
+    max-width: 500px;
+    font-size: 35px;
+  }
+  @media (min-width: 1000px) {
+    max-width: 700px;
+  }
+}

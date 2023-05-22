@@ -1,0 +1,22 @@
+.section {
+  scroll-margin-top: 50px;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  @media (min-width: 767px) {
+    padding-top: 80px;
+    padding-bottom: 80px;
+  }
+}
+
+.section-title {
+  font-family: "Gothampro-black", Impact, Haettenschweiler, "Arial Narrow Bold",
+    sans-serif;
+  line-height: 1;
+  text-transform: uppercase;
+  max-width: 610px;
+  margin-bottom: 40px;
+  @media (min-width: 767px) {
+    font-size: 56px;
+    margin-bottom: 80px;
+  }
+}
