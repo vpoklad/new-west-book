@@ -22,6 +22,9 @@ body.noWebp .section--how-to-buy {
     background-image: url("./img/how-to-by-bg@2x.jpg");
   }
 }
+.section-title--how-to-buy {
+  margin-right: 40px;
+}
 
 .how-to-bye-text-decor {
   position: absolute;
@@ -37,4 +40,45 @@ body.noWebp .section--how-to-buy {
 .container--how-to-bye {
   position: relative;
   z-index: 1;
+  @media (min-width: 572px) and (max-width: 766px) {
+    display: flex;
+  }
+  @media (min-width: 1100px) {
+    display: flex;
+  }
+}
+.online-store {
+  flex: 1 1;
+}
+.online-store-list,
+.book-store-list {
+  list-style: disc;
+  list-style-position: inside;
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 40px;
+}
+.store-title {
+  text-transform: uppercase;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+.online-store-item {
+  flex-basis: 50%;
+  margin-bottom: 8px;
+}
+.online-store-link {
+  padding-top: 4px;
+  padding-bottom: 4px;
+  font-weight: 700;
+  text-decoration: underline;
+  display: inline-block;
+  transition: all 250ms ease;
+  &:hover {
+    transform: scale(1.05);
+  }
+}
+
+.select-title {
+  margin-bottom: 10px;
 }

@@ -1,3 +1,32 @@
+const spreadsheetId = "1vqU_ckx97T2bnGuhAU5ihsOUyV7ZJqgSJhpwOTIl71k";
+const parser = new PublicGoogleSheetsParser();
+parser.parse(spreadsheetId, "book-store").then((items) => {
+  console.log(items);
+});
+parser.parse(spreadsheetId, "online-store").then((items) => {
+  if (items.length === 0) {
+    return;
+  }
+  renderOnlineStore(items);
+});
+
+const onlineStoreList = document.querySelector(".online-store-list");
+function renderOnlineStore(data) {
+  const sortedData = [...data];
+  const items = sortedData.map(
+    (store) => `<li class="online-store-item">
+     <a
+       href="${store.link}"
+       class="online-store-link link"
+       target="_blank"
+       rel="noopener noreferrer">
+       ${store.name}
+     </a>
+   </li>`
+  );
+  onlineStoreList.innerHTML = items.join(" ");
+}
+
 function check_webp_feature(feature, callback) {
   var kTestImages = {
     lossy: "UklGRiIAAABXRUJQVlA4IBYAAAAwAQCdASoBAAEADsD+JaQAA3AAAAAA",
