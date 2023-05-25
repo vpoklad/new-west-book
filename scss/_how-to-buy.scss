@@ -4,6 +4,9 @@
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
+  @media (min-width: 800px) {
+    min-height: 75dvh;
+  }
   @media (min-device-pixel-ratio: 2),
     (min-resolution: 192dpi),
     (min-resolution: 2dppx) {
@@ -42,16 +45,17 @@ body.noWebp .section--how-to-buy {
   z-index: 1;
   @media (min-width: 572px) and (max-width: 766px) {
     display: flex;
+    justify-content: space-between;
   }
   @media (min-width: 1100px) {
     display: flex;
+    justify-content: space-between;
   }
 }
 .online-store {
   flex: 1 1;
 }
-.online-store-list,
-.book-store-list {
+.online-store-list {
   list-style: disc;
   list-style-position: inside;
   display: flex;
@@ -76,9 +80,27 @@ body.noWebp .section--how-to-buy {
   transition: all 250ms ease;
   &:hover {
     transform: scale(1.05);
+    color: $accent-color;
   }
 }
+.container--how-to-bye--offline {
+  position: relative;
+  z-index: 1;
+  @media (min-width: 572px) {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+.book-store-list {
+  flex-basis: 50%;
+}
+.offline-store__name {
+  font-family: "Gothampro-black", Impact, Haettenschweiler, "Arial Narrow Bold",
+    sans-serif;
+  font-style: normal;
 
+  font-weight: 700;
+}
 .select-title {
   margin-bottom: 10px;
 }

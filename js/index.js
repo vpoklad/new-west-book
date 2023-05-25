@@ -1,7 +1,21 @@
 const spreadsheetId = "1vqU_ckx97T2bnGuhAU5ihsOUyV7ZJqgSJhpwOTIl71k";
 const parser = new PublicGoogleSheetsParser();
+
+const onlineStoreList = document.querySelector(".online-store-list");
+const bookStoreList = document.querySelector(".book-store-list");
+const citySelect = document.querySelector("#city");
+var bookStoreArr = [];
+var renderOfflineArr = [];
+var filter = "Київ";
 parser.parse(spreadsheetId, "book-store").then((items) => {
-  console.log(items);
+  if (items.length === 0) {
+    return;
+  }
+  renderSelectOptions(items, citySelect);
+
+  bookStoreArr = items;
+  renderOfflineArr = filterStoreList(bookStoreArr, filter);
+  renderOfflineStore(renderOfflineArr);
 });
 parser.parse(spreadsheetId, "online-store").then((items) => {
   if (items.length === 0) {
@@ -10,9 +24,26 @@ parser.parse(spreadsheetId, "online-store").then((items) => {
   renderOnlineStore(items);
 });
 
-const onlineStoreList = document.querySelector(".online-store-list");
+citySelect.addEventListener("change", (e) => {
+  renderOfflineArr = filterStoreList(bookStoreArr, e.target.value);
+  renderOfflineStore(renderOfflineArr);
+});
+
+function renderSelectOptions(items, select) {
+  const cities = items.map((el) => el.city);
+  const sortedUniqCities = [...new Set(cities)].sort((a, b) =>
+    a.localeCompare(b)
+  );
+  const options = sortedUniqCities.map((el) =>
+    el === "Київ"
+      ? `<option value="${el}" selected >${el}</option>}`
+      : `<option value="${el}">${el}</option>}`
+  );
+  select.innerHTML = options.join(" ");
+}
+
 function renderOnlineStore(data) {
-  const sortedData = [...data];
+  const sortedData = [...data].sort((a, b) => a.name.localeCompare(b.name));
   const items = sortedData.map(
     (store) => `<li class="online-store-item">
      <a
@@ -25,6 +56,21 @@ function renderOnlineStore(data) {
    </li>`
   );
   onlineStoreList.innerHTML = items.join(" ");
+}
+function renderOfflineStore(data) {
+  const items = data.map(
+    (store) => `<li class="online-store-item">
+              <address>
+                <p class="offline-store__name">${store.name}</p>
+                <p class="offline-store__address">${store.adress}</p>
+              </address>
+            </li>`
+  );
+  bookStoreList.innerHTML = items.join("");
+}
+
+function filterStoreList(array, filter) {
+  return array.filter((el) => el.city === filter);
 }
 
 function check_webp_feature(feature, callback) {

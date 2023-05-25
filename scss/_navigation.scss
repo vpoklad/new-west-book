@@ -7,7 +7,7 @@
   right: 0;
   display: flex;
   height: 75px;
-  transition: all 500ms ease;
+  transition: all 500ms linear;
 
   &.fixed {
     background-color: rgba(255, 255, 255, 0.986);
