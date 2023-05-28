@@ -1,4 +1,5 @@
 const spreadsheetId = "1vqU_ckx97T2bnGuhAU5ihsOUyV7ZJqgSJhpwOTIl71k";
+
 const parser = new PublicGoogleSheetsParser();
 
 const onlineStoreList = document.querySelector(".online-store-list");
@@ -11,6 +12,8 @@ parser
   .parse(spreadsheetId, "book-store")
   .then((items) => {
     if (items.length === 0) {
+      citySelect.style.display = "none";
+
       return;
     }
     renderSelectOptions(items, citySelect);
@@ -19,7 +22,10 @@ parser
     renderOfflineArr = filterStoreList(bookStoreArr, filter);
     renderOfflineStore(renderOfflineArr);
   })
-  .catch((e) => console.log(e));
+  .catch((e) => {
+    citySelect.style.display = "none";
+    console.log(e);
+  });
 
 parser
   .parse(spreadsheetId, "online-store")
