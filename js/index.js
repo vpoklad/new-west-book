@@ -7,22 +7,29 @@ const citySelect = document.querySelector("#city");
 var bookStoreArr = [];
 var renderOfflineArr = [];
 var filter = "Київ";
-parser.parse(spreadsheetId, "book-store").then((items) => {
-  if (items.length === 0) {
-    return;
-  }
-  renderSelectOptions(items, citySelect);
+parser
+  .parse(spreadsheetId, "book-store")
+  .then((items) => {
+    if (items.length === 0) {
+      return;
+    }
+    renderSelectOptions(items, citySelect);
 
-  bookStoreArr = items;
-  renderOfflineArr = filterStoreList(bookStoreArr, filter);
-  renderOfflineStore(renderOfflineArr);
-});
-parser.parse(spreadsheetId, "online-store").then((items) => {
-  if (items.length === 0) {
-    return;
-  }
-  renderOnlineStore(items);
-});
+    bookStoreArr = items;
+    renderOfflineArr = filterStoreList(bookStoreArr, filter);
+    renderOfflineStore(renderOfflineArr);
+  })
+  .catch((e) => console.log(e));
+
+parser
+  .parse(spreadsheetId, "online-store")
+  .then((items) => {
+    if (items.length === 0) {
+      return;
+    }
+    renderOnlineStore(items);
+  })
+  .catch((e) => console.log(e));
 
 citySelect.addEventListener("change", (e) => {
   renderOfflineArr = filterStoreList(bookStoreArr, e.target.value);

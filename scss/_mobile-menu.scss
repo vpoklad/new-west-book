@@ -7,7 +7,7 @@
   height: 100%;
   z-index: 2000;
   overflow-y: auto;
-  opacity: 0.9;
+  opacity: 0.95;
   background: $background-color;
   color: $text-color;
   backdrop-filter: blur(8px);
@@ -54,6 +54,7 @@
   }
 }
 .hamburger {
+  z-index: 2001;
   padding: 10px 10px;
   display: block;
   cursor: pointer;
