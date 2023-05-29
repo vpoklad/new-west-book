@@ -68,16 +68,21 @@ body.noWebp .hero-section {
 .container--hero {
   position: relative;
   z-index: 1;
-
+  padding-top: 7dvh;
   display: flex;
   gap: 20px;
   flex-direction: column;
   align-items: center;
 
-  @media (min-width: 450px) and (min-height: 300px) {
+  @media (orientation: landscape) and (min-width: 620px) {
     padding-top: 15dvh;
     flex-direction: row;
     justify-content: space-between;
+  }
+
+  @media only screen and (orientation: portrait) {
+    flex-direction: column;
+    align-items: center;
   }
 }
 
@@ -120,7 +125,8 @@ hgroup {
     text-align: center;
   }
   max-width: 488px;
-  margin-bottom: 90px;
+
+  margin-bottom: 80px;
 
   p {
     line-height: 1;
