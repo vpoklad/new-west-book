@@ -17,9 +17,9 @@
   display: flex;
 
   gap: 15px;
-  margin-bottom: 16px;
+  margin-bottom: 10px;
   @media (min-width: 767px) {
-    margin-bottom: 40px;
+    margin-bottom: 20px;
   }
 }
 
@@ -34,7 +34,6 @@
 }
 
 .review-text {
-  margin-bottom: 40px;
   font-style: italic;
 }
 
@@ -42,7 +41,7 @@
   font-family: "Gothampro-black", Impact, Haettenschweiler, "Arial Narrow Bold",
     sans-serif;
   font-size: 24px;
-  margin-bottom: 15px;
+  line-height: 1.1;
 }
 .reviewe-subtitle {
   font-size: 16px;
