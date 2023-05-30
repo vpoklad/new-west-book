@@ -18,7 +18,10 @@
 }
 .social-list--footer {
   justify-content: space-between;
-  width: 263px;
+  width: 243px;
+  .social-list--items{
+    margin-right: 0;
+  }
 }
 .copyright {
   font-size: 12px;
