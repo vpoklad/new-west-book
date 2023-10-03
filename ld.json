@@ -1,0 +1,116 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Book",
+  "@id": "https://www.new-west.in.ua/",
+  "url": "https://www.new-west.in.ua/",
+  "name": "Новий Захід. Українська мрія",
+  "author": {
+    "@type": "Person",
+    "name": "Ярослав Романчук",
+    "sameAs": [
+      "https://www.wikidata.org/wiki/Q2657217",
+      "https://www.facebook.com/Jaroslav.Romanchuk",
+      "https://www.youtube.com/@Romanchukzs",
+      "https://t.me/Jaroslav_Romanchuk"
+    ]
+  },
+  "description": "«Новий Захід. Українська мрія» - перша книга у новітній історії України, яка представляє системний погляд на економічні реформи в країні. У ній представлено наукове обґрунтування необхідності стратегічного курсу, який дозволить створити тисячі нових бізнесів і мільйони робочих місць із зростанням ВВП до 7-10% на рік. А це гарантовано забезпечить швидке повоєнне відновлення економіки країни.",
+  "isbn": "9786177758647",
+  "numberOfPages": "672",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Літера Нова"
+  },
+  "inLanguage": "Uk",
+  "bookFormat": "https://schema.org/Paperback",
+  "copyrightHolder": {
+    "@type": "Organization",
+    "name": "Літера Нова"
+  },
+  "copyrightYear": "2023",
+  "image": "https://www.new-west.in.ua/img/hero-book.avif",
+  "funder": [
+    {
+      "@type": "Organization",
+      "name": "Нова Пошта",
+      "sameAs": "https://www.wikidata.org/wiki/Q12133863"
+    },
+    {
+      "@type": "Person",
+      "name": "Вячеслав Климов",
+      "sameAs": "https://www.wikidata.org/wiki/Q65561156"
+    },
+    {
+      "@type": "Person",
+      "name": "Володимир Поперешнюк",
+      "sameAs": "https://www.wikidata.org/wiki/Q55107498"
+    }
+  ],
+  "subjectOf": {
+    "@type": "VideoObject",
+    "description": "Автор книги про головну ідею, для кого вона була написана і що саме думаючий читач повинен знайти в Головній Книзі року. Він пропонує створити «Новий Захід» в Україні за допомогою інноваційної моделі економічного розвитку, що ґрунтується на ідеях свободи та теорії підприємницького зростання Австрійської економічної школи (АЕШ). У книзі представлений докладний план, як перетворити Україну на процвітаючу та успішну країну, а звичайних українців зробити багатими та щасливими.",
+    "url": "https://www.youtube.com/watch?v=ZCUiFIpf_Ko",
+    "embedUrl": "https://www.youtube.com/embed/ZCUiFIpf_Ko",
+
+    "duration": "PT2M27S",
+    "name": "Головна Книга Року. Ярослав Романчук про «Новий Захід. Українська мрія»: як реформи змінять Україну",
+    "uploadDate": "2023-05-30T00:00:00+03:00",
+    "thumbnailUrl": "https://i3.ytimg.com/vi/ZCUiFIpf_Ko/maxresdefault.jpg"
+  },
+  "review": [
+    {
+      "@type": "Review",
+      "author": [
+        {
+          "@type": "Person",
+          "name": "Вячеслав Климов",
+          "sameAs": "https://www.wikidata.org/wiki/Q65561156"
+        },
+        {
+          "@type": "Person",
+          "name": "Володимир Поперешнюк",
+          "sameAs": "https://www.wikidata.org/wiki/Q55107498"
+        }
+      ],
+      "reviewBody": "Якби така книга з'явилася в Україні на початку 1990‑х, то доля країни могла б бути зовсім іншою. Без олігархату та корупції, з населенням понад 50 мільйонів та рівнем життя, як у Чехії чи Польщі. Перед нами черговий шанс."
+    },
+    {
+      "@type": "Review",
+      "author": {
+        "@type": "Person",
+        "name": "Михайло Подоляк",
+        "sameAs": "https://www.wikidata.org/wiki/Q108389921"
+      },
+      "reviewBody": "Мені здається, Ярославу вдалося написати не просто книгу, а покрокову інструкцію про те, як створити саме таку Україну. В яку закохуються, в яку вірять, в яку готові інвестувати.",
+      "reviewRating": " "
+    },
+    {
+      "@type": "Review",
+      "reviewRating": {
+        "@type": "Rating",
+        "ratingValue": "5"
+      },
+      "author": {
+        "@type": "Person",
+        "name": "Мартін Новацкі",
+        "sameAs": "https://zpp.net.pl/en/wladze/marcin-nowacki/"
+      },
+      "reviewBody": "Україна бюрократична залишиться в минулому. Україна підприємницька - це майбутнє. Українці на нього заслужили, заплатили за цю можливість дуже високу ціну."
+    },
+    {
+      "@type": "Review",
+      "author": {
+        "@type": "Person",
+        "name": "Михайло Камчатний"
+      },
+      "reviewBody": "Книга, яка дає вичерпне розуміння необхідних економічних змін в нашій країні. Тепер точно на наш вибір не вплине брехня популістів і політичних шахраїв, які водять нас за ніс всі роки незалежності.",
+      "reviewRating": " "
+    }
+  ],
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": "88",
+    "bestRating": "100",
+    "ratingCount": "20"
+  }
+}
